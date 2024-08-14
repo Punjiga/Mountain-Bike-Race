@@ -26,7 +26,7 @@ html, body{
 
 /* FLECHA PARA IR PARA ARRIBA */
 .to-top{
-    background: #0a0908;
+    background: #F56C00;
     position: fixed;
     bottom: 16px;
     right: 32px;
@@ -36,8 +36,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 9rem; 
-    /* 2.5rem al font size y bg naranja */
+    font-size: 2.5rem; 
     color: white;
     text-decoration: none;
     opacity: 0;
