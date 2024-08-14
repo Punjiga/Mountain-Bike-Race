@@ -1,0 +1,754 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0 auto; 
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+
+
+/* PARA LA BARRA DE SCROLL */
+
+
+
+
+
+
+
+
+
+
+
+/* FLECHA PARA IR PARA ARRIBA */
+.to-top{
+    background: #F56C00;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+/* PRIMER APARTADO HOME */
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+    background: url(../IMAGENES/DESKTOP/banner_home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 3rem;
+}
+.navigation{
+    width: 100vw;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+#open-menu, #close-menu{
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+.menu li a{
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+.menu li a:hover{
+    color: rgba(245,108,0,2);
+    text-decoration: underline;
+    font-size: 3rem;
+}
+/* TEXTOS */
+.texts {
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 17rem;
+    max-width: 1000px; 
+    margin: 0 auto; /* Centra horizontalmente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    padding-top: 4rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+}
+.parrafos{
+    font-family: 'Lora';
+    font-weight: 100;
+    color: white; 
+}
+.texts p{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 75px;
+    margin-top: 75px;
+}
+.button{
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    background-color: #F56C00;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover{
+    background-color: #f56a0093;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+}
+.button span{
+    text-decoration: underline;
+}
+/* FIN SECCION HOME */
+
+/* SEGUNDA SECCION INICIO_SECTION */
+.subtitles{
+    color: white;
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 700;
+}
+.inicio-section{
+    background-color: #388E3C;
+    width: 100vw;
+    height: 100%;
+    font-size: 1.4rem;
+}
+.inicio-section div h2{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.container-inicio{
+    display: flex;
+    text-align: center;
+    padding: 4rem;   
+}
+.container-inicio div img{
+    width: 29rem;
+    border: solid #2F5E2C 4.27px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    margin: 0rem 3rem;
+
+}
+/* FIN SEGUNDA SECCION INICIO_SECTION */
+
+/* INICIO TERCERA SECCION RUTA_SECTION  */
+.ruta-section{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 960px;
+    background: url(../IMAGENES/DESKTOP/ruta_section.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 4rem;
+    justify-content: center;
+}
+.img-ruta img{
+    width: 60rem;
+    transition: all ease-in-out .4s;
+}
+.img-ruta img:hover{
+    width: 65rem;
+}
+.ruta-section .subtitles{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+/*  FIN TERCERA SECCION RUTA_SECTION */
+
+/* INICIO CUARTA SECCION INFORMACION-SECTION */
+.informacion-section{
+    width: 100vw;
+    height: fit-content;
+    background-color: #388E3C;
+    font-size: 1.2rem;
+}
+.informacion-section h2{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.cards{
+    background-color: #212121;
+    text-align: center;
+}
+.cards p{
+    padding-bottom: 2rem;
+}
+.card-2{
+    background-color: #388E3C;
+}
+/* FIN CUARTA SECCION INFORMACION-SECTION */
+/* INICIO QUINTA SECCION PATROCINADORES-SECTION */
+.patrocinadores-section{
+    width: 100vw;
+    height: fit-content;
+    background-color: #212121;
+    text-align: center;
+    padding: 5rem 0rem 5rem 0rem;
+}
+.logos-container{
+    margin-top: 37px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 37px;
+}
+.logos-container img{
+    border: solid #494745 .3rem;
+}
+/* FIN QUINTA SECCION PATROCINADORES-SECTION */
+/* COMIENZO SEXTA SECCION GALERIA-SECTION */
+.galeria-section{
+    width: 100vw;
+    height: fit-content;
+    background-color: #388E3C;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+    display: flex;
+}
+.imagen{
+    border: solid #2F5E2C 4.27px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.galeria-section h2{
+    margin-bottom: 2rem;
+}
+/* FINAL SEXTA SECTION GALERIA-SECTION */
+/* COMIENZO SEPTIMA SECCION PAQUETES-SECTION*/
+    .paquetes-section{
+        width: 100vw;
+        height: fit-content;
+        background-color: #212121;
+        padding-bottom: 1.5rem;
+    }
+    .paquetes-section h2{
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+    .card-container{
+        display: flex;
+    }
+    .subtitle-card{
+        margin-bottom: 20px;
+    }
+    .card{
+        border-radius: 100px;
+        background-color: #2F5E2C;
+        text-align: center;
+        height: fit-content;
+        padding-bottom: 137px;
+        transition: all 0.3s ease-in-out;
+    }
+    .card:hover{
+        background-color: #1f5c1b;
+        padding-bottom: 150px;
+    }
+    .card h3{
+        margin-top: 3rem;
+        font-size: 25px;
+    }
+    .card p{
+        max-width: 310px;
+        padding: 20px;
+        font-size: 24px;
+    }
+/* FIN SEPTIMA SECCION PAQUETES-SECTION */
+/* COMIENZO OCTAVA SECCION PRODUCTOS-SECTION */
+.products-section{
+    width: 100vw;
+    height: 800px;
+    background-color: #388E3C;
+    display: flex;
+    align-items: center;
+}
+.container-products{
+    display: grid;
+}
+.card-product{
+    width: 388px;
+    height: 315px;
+    float: right;
+    border: solid #2F5E2C 7px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 71px;
+    overflow: hidden;
+    background-color: rgba(116, 109, 109, 0.3);
+    align-content: center;
+}
+#product-1{
+    padding-left: 9rem;
+}
+/* FIN OCTAVA SECCION PRODUCTOS-SECTION */
+/* COMIENZO NOVENA SECCION CONTACT-US-SECTION */
+.contact-us-section{
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    font-size: 1.5rem;
+}
+.dark-part{
+    background-color: #212121;
+    display: flex;
+    width: 50vw;
+    background-image: url(../Logos/Bicicletas-redimensionadas/Desktop/bicicletas-desktop-negra.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    
+}
+.green-part{
+    background-color: #2F5E2C;
+    display: flex;
+    width: 50vw;
+    background-image: url(../Logos/Bicicletas-redimensionadas/Desktop/bicicletas-desktop-verde.png);
+    background-size: contain;
+    background-position: 50px;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+}
+
+/* FINAL NOVENA SECCION CONTACT-US-SECTION */
+/* COMIENZO FOOTER */
+    .footer{
+        width: 100vw;
+        height: fit-content;
+        background-color: #388E3C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer h3{
+        font-size: 2rem;
+        color: white;
+        font-family: 'Raleway' , sans-serif;
+        font-weight: 700;
+        padding-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .menu-footer{
+        margin-left: 6rem;
+    }
+    .menu-footer a{
+        font-size: 2rem;
+        color: white;
+        font-family: 'Poppins';
+        font-weight: 100;
+        text-decoration: underline;
+        font-family: 'Raleway' , sans-serif;
+        font-weight: 700;
+    }
+    .menu-footer ul li{
+        margin-bottom: 2rem;
+    }
+    .menu-footer ul li a:hover{
+        color: #F56C00;
+        text-decoration: none;
+    }
+    .logo-footer img{
+        margin-bottom: 1rem;
+        transition: all .3s ease-in-out;
+    }
+    .derechos{
+        padding-left: 3.8rem;
+    }
+    .btn-noticias{
+        background-color: #2F5E2C;
+        padding: 1rem;
+        border: none;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .btn-send{
+        background-color: #F56C00;
+        padding: 1rem;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        border-radius: 0.5rem;
+    }
+    .btn-send:hover{
+        opacity: 90%;
+        padding: 1.4rem;
+    }
+/* FINAL FOOTER */
+
+/* ----------------SECOND INDEX INSCRIBIRSE -----------*/
+/* Estilos específicos para el segundo index */
+.secondindex-page {
+    background: linear-gradient(to bottom, #319418, #212121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    color: white;
+    font-family: 'Raleway';
+}
+
+.secondindex {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2F5E2C;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.secondindex h1 {
+    margin-bottom: 20px;
+    
+}
+
+.secondindex .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+.secondindex .form-group input[type="text"],
+.secondindex .form-group input[type="email"],
+.secondindex .form-group input[type="number"],
+.secondindex .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.secondindex button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F56C00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.secondindex button:hover {
+    background-color: #319418;
+}
+/* FIN DEL SEGUNDO INDEX DE INSCRIBIRSE */
+/* -------------------MEDIA QUERRY PARA TABLETS--------------------- */
+@media screen and (max-width: 1023px) {
+    .menu{
+        position: absolute;
+        right: -80rem;
+        flex-direction: column;
+        background-color: #1f5c1b;
+        gap: 3rem;
+        padding-bottom: 1rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu.mostrar{
+        right: 0;
+    }
+    .navigation{
+        text-align: end;
+        padding-right: .8rem;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .logo{
+        display: none;
+    }
+    #open-menu, #close-menu{
+        cursor: pointer;
+        display: inline-flex;
+        padding-right: 1rem;
+    }
+    #close-menu{
+        display: none;
+    }
+    .inicio-section{
+        font-size: 1rem;
+    }
+    .inicio-section p{
+        margin-bottom: 2rem;
+    }
+    .inicio-section div{
+        flex-wrap: wrap;
+    }
+    .inicio-section div img{
+        width: 30rem;
+    }
+    .img-ruta img{
+        width: 40rem;
+        transition: all ease-in-out .4s;
+    }
+    .img-ruta img:hover{
+        width: 53rem;
+    }
+    .logos-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .imagenes-galeria img{
+        width: 35rem;
+    }
+    .card h3{
+        margin-top: 3rem;
+        font-size: 18px;
+    }
+    .card p{
+        max-width: 220px;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .dark-part h3{
+        font-size: 1.7rem;
+    }
+    .green-part h2{
+        font-size: 1.7rem;
+    }
+    .dark-part{
+        background-position: 50px;
+    }
+    .logo-footer img{
+        width: 13rem;
+    }
+    .menu-footer a{
+        font-size: 1.5rem;
+    }
+    .btn-noticias{
+        padding: .7rem;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .btn-send{
+        padding: .8rem;
+        font-size: 1.3rem;
+    }
+    .icon img{
+        width: 3rem;
+        margin-right: .5rem;
+    }
+    .btn-send{
+        padding: .7rem;
+        font-size: 1.2rem;
+    }
+    .btn-send:hover{
+        padding: .9rem;
+    }
+}
+/* ---------------------MEDIA QUERRY PARA CELULARES------------------- */
+@media screen and (max-width: 768px) {
+    .header{
+        background-position: -25rem;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    .logo-footer img{
+        display: none;
+    }
+    .texts p{
+        max-width: 400px;
+        font-size: 1.2rem;
+    }
+    .button{
+        font-size: 1.3rem;
+    }
+    .inicio-section{
+        font-size: 1rem;
+        height: fit-content;
+    }
+    .inicio-section div h2{
+        padding-bottom: 0px;
+    }
+    .inicio-section div img{
+        width: 20rem;
+        margin: 0px;
+    }
+    .container-inicio{
+        padding-top: 2rem;
+    }
+    .container-inicio p{
+        padding-bottom: 1rem;
+    }
+    .ruta-section{
+        height:  fit-content;
+    }
+    .img-ruta img{
+        width: 23rem;
+    }
+    .img-ruta img:hover{
+        width: 25rem;
+    }
+    .informacion-section{
+        font-size: .7rem;
+    }
+    .informacion-section h2{
+        font-size: 1rem;
+    }
+    .logos-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logos-container img{
+        width: 13rem;
+    }
+    .imagenes-galeria img{
+        width: 15rem;
+        margin: .5rem 0;
+    }
+    .card-container{
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-bottom: 1.5rem;
+    }
+    .products-section{
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .products-section h2{
+        position: absolute;
+        top: 21rem;
+        font-size: 1.3rem;
+        padding: 1rem 0rem;
+    }
+    .card-product{
+        width: 15rem;
+        margin-bottom: 70px;
+        position: relative;
+    }
+    #product-1{
+        padding: 0;
+        width: 5rem;
+        margin-left: 5rem;
+    }
+    .card-product img{
+        width: 15rem;
+    }
+    .dark-part h3{
+        font-size: .7rem;
+    }
+    .green-part h2{
+        font-size: .7rem;
+    }
+    .dark-part, .green-part{
+        background-position: 0px;
+    }
+    .contact-us-section{
+        height: 23rem;
+    }
+    /* PARTE DEL FOOOTER */
+    footer{
+        flex-wrap: wrap;
+    }
+    .menu-footer{
+        margin-left: 1rem;
+    }
+    .menu-footer a{
+        font-size: .9rem;
+    }
+    .menu-footer h3{
+        font-size: 1rem;
+    }
+    .logo-footer a img{
+        display: block;
+    }
+    .btn-noticias{
+        padding: 1rem;
+        font-size: .8rem;
+        margin-bottom: .5rem;
+    }
+    .btn-send{
+        padding: 1rem;
+        font-size: .9rem;
+    }
+    .btn-send:hover{
+        padding: 1.1rem;
+    }
+    .derechos p{
+        font-size: .7rem;
+        padding-right: .6rem;
+    }
+    .icons a img{
+        margin-left: 2rem;
+        width: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    #parrafofooter{
+        margin-left: 1.8rem;
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 447px) {
+    .inicio-section div img{
+        width: 18rem;
+        margin: 0px;
+    }
+    .container-inicio{
+        padding: 2rem;
+    }
+    .ruta-section img{
+        width: 16rem;
+    }
+    .ruta-section img:hover{
+        width: 18rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .texts p{
+        max-width: 300px;
+        font-size: 1rem;
+    }
+    .inicio-section{
+        font-size: .9rem;
+    }
+    .inicio-section div img{
+        width: 16rem;
+    }
+}
