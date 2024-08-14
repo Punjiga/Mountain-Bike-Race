@@ -185,11 +185,11 @@ html, body{
     justify-content: center;
 }
 .img-ruta img{
-    width: 60rem;
+    width: 58rem;
     transition: all ease-in-out .4s;
 }
 .img-ruta img:hover{
-    width: 65rem;
+    width: 60rem;
 }
 .ruta-section .subtitles{
     text-align: center;
@@ -529,7 +529,7 @@ html, body{
         transition: all ease-in-out .4s;
     }
     .img-ruta img:hover{
-        width: 53rem;
+        width: 50rem;
     }
     .logos-container{
         grid-template-columns: repeat(2, 1fr);
