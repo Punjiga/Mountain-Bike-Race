@@ -10,20 +10,21 @@
 html, body{
     scroll-behavior: smooth;
 }
-
-
+.header, .main, .footer{
+    overflow: hidden;
+}
 /* PARA LA BARRA DE SCROLL */
-
-
-
-
-
-
-
-
-
-
-
+::-webkit-scrollbar{
+    width: .7rem;
+    background-color: rgb(226, 223, 223);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #319418;
+    border-radius: 2rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #F56C00;
+}
 /* FLECHA PARA IR PARA ARRIBA */
 .to-top{
     background: #F56C00;
@@ -52,7 +53,7 @@ html, body{
 .header{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     background: url(../IMAGENES/DESKTOP/banner_home.jpg) no-repeat;
     background-size: cover;
@@ -62,6 +63,7 @@ html, body{
     width: 3rem;
 }
 .navigation{
+    padding: 1rem 0rem;
     width: 100vw;
     position: fixed;
     background: rgba(0, 0, 0, 0.2);
@@ -72,7 +74,6 @@ html, body{
     color: rgb(255, 255, 255);
     display: none;
 }
-
 .menu{
     width: 100%;
     display: flex;
@@ -154,7 +155,7 @@ html, body{
     height: 100%;
     font-size: 1.4rem;
 }
-.inicio-section div h2{
+.inicio-section article h2{
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 2rem;
@@ -358,7 +359,7 @@ html, body{
 /* FINAL NOVENA SECCION CONTACT-US-SECTION */
 /* COMIENZO FOOTER */
     .footer{
-        width: 100vw;
+        width: 100%;
         height: fit-content;
         background-color: #388E3C;
         display: flex;
@@ -518,7 +519,7 @@ html, body{
     .inicio-section p{
         margin-bottom: 2rem;
     }
-    .inicio-section div{
+    .inicio-section article{
         flex-wrap: wrap;
     }
     .inicio-section div img{
@@ -638,6 +639,9 @@ html, body{
     .logos-container img{
         width: 13rem;
     }
+    .patrocinadores-section h2{
+        font-size: 1rem;
+    }
     .imagenes-galeria img{
         width: 15rem;
         margin: .5rem 0;
@@ -655,6 +659,7 @@ html, body{
     .products-section h2{
         position: absolute;
         top: 21rem;
+        left: 1rem;
         font-size: 1.3rem;
         padding: 1rem 0rem;
     }
