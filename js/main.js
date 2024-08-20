@@ -43,3 +43,5 @@ window.addEventListener("scroll", () => {
         toTop.classList.remove("active");
     }
 })
+
+//////////////////////EFECTO PARALLAX///////////////////
